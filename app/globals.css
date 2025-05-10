@@ -48,3 +48,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('/fonts/TitilliumWeb-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-titillium {
+  font-family: 'Titillium Web', sans-serif;
+} 
+
+/* body {
+  font-family: 'Titillium Web', sans-serif;
+} */

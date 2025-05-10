@@ -2,13 +2,11 @@
 import { MdMenu, MdOutlineSettings } from "react-icons/md";
 import { FaPlus } from "react-icons/fa6";
 import { LuMessageSquareText, LuHistory, LuMessageCircleQuestion } from "react-icons/lu";
-import { useState } from "react";
+import { useTheme } from "../../context/ThemeContext.jsx"
 import Settings from "../Settings/Settings.jsx";
 
 const Sidebar = () => {
-
-    const [extended, setExtended] = useState(false)
-    const [settings, setSettings] = useState(false)
+    const { extended, setExtended, settings, setSettings } = useTheme();
 
   return (
     <div className={`min-h-[100vh] flex flex-col justify-between bg-sidebar 

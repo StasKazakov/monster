@@ -5,6 +5,8 @@ const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('light');
+  const [extended, setExtended] = useState(false); 
+  const [settings, setSettings] = useState(false);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -29,8 +31,13 @@ export const ThemeProvider = ({ children }) => {
     localStorage.setItem('theme', newTheme);
   };
 
+  const resetSidebar = () => { 
+    setExtended(false);
+    setSettings(false);
+  };
+
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, extended, setExtended, settings, setSettings, resetSidebar }}>
       {children}
     </ThemeContext.Provider>
   );
