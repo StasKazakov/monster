@@ -16,6 +16,7 @@
   --color-border: var(--border);
   --color-sidebar: var(--sidebar);
   --color-background-2: var(--background-2);
+  --color-bg-hover: var(--bg-hover);
 }
 
 :root {
@@ -27,17 +28,19 @@
   --border: oklch(0.929 0.013 255.508);
   --sidebar: #f0f4f9;
   --background-2: #fbfdff;
+  --bg-hover: #dfe4ea;
 }
 
 .dark {
-  --background: #1A1E2E; /* Dark navy background like StableProxy */
+  --background: #1b1c1d; /* Dark navy background like StableProxy */
   --foreground: #E0E0E0; /* Light gray text */
-  --primary: #f0f4f9; /* Bright blue for buttons */
-  --accent: #2A2F45; /* Darker accent for secondary elements */
-  --input: #2A2F45; /* Dark input fields */
+  --primary: #f0f4f9; 
+  --accent: #E3E3E314; 
+  --input: #2A2F45; 
   --border: #3A3F5A;
-  --sidebar: #1a1c22;
-  --background-2: #191919; /* Subtle border */
+  --sidebar: #282a2c;
+  --background-2: #1e1f20;
+  --bg-hover: #18191a;; 
 }
 
 @layer base {
